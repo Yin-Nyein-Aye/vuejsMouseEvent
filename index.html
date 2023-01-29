@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<style>
+    .box{
+        padding: 100px;
+        background-color: brown;
+        display:inline-block;
+        margin: 50px;     
+        color: wheat;
+    }
+</style>
+<body>
+    <h1>Learning Vue</h1>
+    <div id="app">
+        <div class="box" @mouseover="mouseOverHandler($event,'yna')">Mouse Over</div>
+        <div class="box" @mouseleave="mouseleaveHandler">Mouse Leave</div>
+        <div class="box" @dblclick="dbclickHandler">Mouse Double Click</div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
